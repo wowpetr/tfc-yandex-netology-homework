@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: wp
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQClQCPdleKAd8CBAVPid6FupGZqHUQVfTHQUk3T+Y3qOdYMu3ha1Iv2F/z1nbnOTDHRiGwGP/z00j3aH1QNebbe0NufUIfZM9a4Rc6cZsUrD+lKvUgbRpsY48UW3bhJIEIXol/XtwlQlpRTQ3gyH56CWZ1UAqJSoAEN5kPIRyQjCfMZGwI6nETUk9ibA7BQtQvk5GPLq5MQ2/6LH03L3IixWmV89vw2YHOv1bfBFDpxbuuylrXZCpywFHiY0UDNKH4/6wXssWiHP0qDX31Hs0VlLaVOLUbmVaFpEvkZcjTOO6/4z2IS5iqcPDeRC+FAelALo3IOZSt6CeLc5Qsy5/z1W0LpsYOn0g2zk5kBKw8PSPmm+AN8o9SwgYNg5pHaOicjC24OKaSY0T71yyv82cqG/zLdn4r4u/FtzjJsJzZCzu4jDaIjsvkbPweNLEzeOnwbtzvmc/s4ylCuRs/oetVTEvc+oZuGiKdWwQdhi0dwIXl99SkD3W0SrZg97aiddAs= wp
