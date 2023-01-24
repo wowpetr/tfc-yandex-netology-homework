@@ -15,7 +15,7 @@ module "instance" {
   platform_id   = "standard-v3"
   name          = "vm-1"
   users         = "wp"
-  ssh_key       = "${file("~/.ssh/wp-yandex.pub")}"
+  ssh_key       = var.ssh_public_key
   cores         = local.cores[terraform.workspace]
   boot_disk     = "network-ssd"
   disk_size     = local.disk_size[terraform.workspace]
